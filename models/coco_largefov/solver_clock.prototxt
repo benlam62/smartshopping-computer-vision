@@ -1,0 +1,15 @@
+train_net: "models/coco_largefov/train_clock.prototxt"
+
+lr_policy: "step"
+gamma: 0.1
+stepsize: 2000
+base_lr: 0.001
+
+display: 1
+max_iter: 40
+momentum: 0.9
+weight_decay: 0.0005
+
+snapshot: 10
+snapshot_prefix: "models/coco_largefov/"
+solver_mode: CPU
